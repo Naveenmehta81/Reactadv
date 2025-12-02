@@ -6,6 +6,7 @@ import Home from './components/Home';
 import About from './components/About';
 import Support from './components/Support';
 import  Mainheader  from './Mainheader';
+import LoiginForm from './typeofForm/LoiginForm.jsx';
 
 function App() {
   return(
@@ -14,16 +15,18 @@ function App() {
     <NavLink to='/'>Home</NavLink> |{" "}
     <NavLink to='/about'>about</NavLink> |{" "}
    <NavLink to='/support'>Support</NavLink> |{" "}
-    <NavLink to='/Form'>Form</NavLink>
+    <NavLink to='/Form'>Form</NavLink>|{" "}
+    <NavLink to = '/loiginForm'>Login</NavLink>
   </nav>
 
   <Routes>
     <Route path='/' element={<Mainheader/>} >
     {/* default route */}
     <Route index element={<Home/>}/>
-    <Route path='about' element={<About/>}/>
-    <Route path='support' element={<Support/>}/>
-    <Route path='Form'  element ={<Filedata/>}/>
+    <Route path='/about' element={<About/>}/>
+    <Route path='/support' element={<Support/>}/>
+    <Route path='/Form'  element ={<Filedata/>}/>
+    <Route path='/LoiginForm' element={<LoiginForm/>}/>
     </Route>
   </Routes>
 
