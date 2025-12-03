@@ -1,0 +1,36 @@
+/* The main container */
+.container {
+  display: flex;             /* Enables Flexbox layout */
+  flex-direction: column;    /* Stacks items vertically (one by one) */
+  justify-content: center;
+  align-items: center;       /* Centers items horizontally */
+  justify-content: center;   /* Optional: Centers items vertically */
+  width: 100vw;              /* Takes full width of the viewport */
+  min-height: 100vh;         /* Ensures it takes full height */
+  padding: 2rem 0;           /* Adds breathing room */
+  background-color: #f3f4f6; /* Light gray background */
+}
+
+/* The Heading */
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+
+/* The Purple Line under heading */
+.line {
+  width: 150px;              /* Length of the line */
+  height: 4px;               /* Thickness of the line */
+  background-color: #8b5cf6; /* Color (Violet/Purple) */
+  margin-bottom: 3rem;       /* Space between line and testimonials */
+  border-radius: 2px;
+}
+
+/* The Testimonial wrapper */
+.tesimonial {
+    width: 80%;
+    max-width: 700px;
+    /* We don't need much here, the children handle the layout */
+}

@@ -1,0 +1,86 @@
+/* The White Card Box */
+.Card {
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    padding: 3rem;
+    
+    /* Layout */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative; /* Needed for the floating image */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    margin-top: 30px; /* Space for the image to float */
+    transition: all 0.2s;
+}
+
+.Card:hover {
+    box-shadow: 0 10px 15px rgba(0,0,0,0.2);
+}
+
+/* The Floating Image (Left Side + Blue Circle) */
+.image {
+    position: absolute;
+    top: -70px;       /* Moves image UP out of the box */
+    left: 40px;       /* Moves image to the LEFT */
+    z-index: 10;
+}
+
+.image img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 50%;
+    background-color: #8b5cf6; /* Blue/Violet Circle */
+    padding: 4px;             /* Creates the gap/border effect */
+    z-index: 20;
+}
+
+/* Background Circle Decorative Element (Optional) */
+.image::before {
+    content: "";
+    width: 140px;
+    height: 140px;
+    background-color: #8b5cf6;
+    border-radius: 50%;
+    position: absolute;
+    top: -6px;
+    right: -6px;
+    z-index: -10;
+}
+
+/* Text Styling inside Card */
+.name p {
+    font-size: 1.7rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-top: 1.5rem; /* Push down to clear image area */
+    margin-bottom: 0.2rem;
+    letter-spacing: 1px;
+}
+
+.title p {
+    color: #a78bfa; /* Light Violet */
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+}
+
+.text {
+    margin-bottom: 1rem;
+}
+
+.text p {
+    color: #555;
+    text-align: center;
+    line-height: 1.5;
+    opacity: 0.8;
+}
+
+/* Icons inside Card */
+.icon {
+    color: #8b5cf6;
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+}
