@@ -8,6 +8,7 @@ import Mainheader from './Mainheader'
 import LoiginForm from './typeofForm/LoiginForm.jsx'
 import Signin from './typeofForm/Signin.jsx'
 import Details from './components/Card.jsx'
+import Paggin from './paggination/Paggin.jsx'
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <NavLink to='/login'>Login</NavLink> |{" "}
         <NavLink to='/signin'>Sign in</NavLink> |{" "}
         <NavLink to='/Card'>Testimonial</NavLink>
+        <NavLink to = '/Paggin'>Paggiantion</NavLink>
       </nav>
 
       <Routes>
@@ -31,6 +33,7 @@ function App() {
           <Route path='login' element={<LoiginForm />} />
           <Route path='signin' element={<Signin />} />
           <Route path='Card' element={<Details />} />
+          <Route path='Paggin' element ={<Paggin/>}/>
         </Route>
       </Routes>
     </div>

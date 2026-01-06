@@ -5,7 +5,7 @@ import { Outlet } from 'react-router-dom';
 function Mainheader ()  {
   
      return (
-    <div>Home page is this :
+    <div>
         <Outlet/>  
     </div>
     
